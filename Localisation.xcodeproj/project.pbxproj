@@ -13,6 +13,7 @@
 		D45C3EB126B97483007630A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45C3EAF26B97483007630A5 /* Main.storyboard */; };
 		D45C3EB326B97486007630A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45C3EB226B97486007630A5 /* Assets.xcassets */; };
 		D45C3EB626B97486007630A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45C3EB426B97486007630A5 /* LaunchScreen.storyboard */; };
+		D45C3EC626B9782B007630A5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D45C3EC826B9782B007630A5 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,13 @@
 		D45C3EB226B97486007630A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D45C3EB526B97486007630A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D45C3EB726B97486007630A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D45C3EC126B97789007630A5 /* mr-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "mr-IN"; path = "mr-IN.lproj/Main.strings"; sourceTree = "<group>"; };
+		D45C3EC226B977A5007630A5 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Main.strings; sourceTree = "<group>"; };
+		D45C3EC326B977B2007630A5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		D45C3EC726B9782B007630A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D45C3EC926B9782D007630A5 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D45C3ECA26B9782E007630A5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D45C3ECB26B9782F007630A5 /* mr-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "mr-IN"; path = "mr-IN.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 				D45C3EB226B97486007630A5 /* Assets.xcassets */,
 				D45C3EB426B97486007630A5 /* LaunchScreen.storyboard */,
 				D45C3EB726B97486007630A5 /* Info.plist */,
+				D45C3EC826B9782B007630A5 /* Localizable.strings */,
 			);
 			path = Localisation;
 			sourceTree = "<group>";
@@ -108,6 +117,9 @@
 			knownRegions = (
 				en,
 				Base,
+				"mr-IN",
+				hi,
+				ja,
 			);
 			mainGroup = D45C3E9D26B97483007630A5;
 			productRefGroup = D45C3EA726B97483007630A5 /* Products */;
@@ -125,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D45C3EB626B97486007630A5 /* LaunchScreen.storyboard in Resources */,
+				D45C3EC626B9782B007630A5 /* Localizable.strings in Resources */,
 				D45C3EB326B97486007630A5 /* Assets.xcassets in Resources */,
 				D45C3EB126B97483007630A5 /* Main.storyboard in Resources */,
 			);
@@ -150,6 +163,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				D45C3EB026B97483007630A5 /* Base */,
+				D45C3EC126B97789007630A5 /* mr-IN */,
+				D45C3EC226B977A5007630A5 /* hi */,
+				D45C3EC326B977B2007630A5 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -162,6 +178,17 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		D45C3EC826B9782B007630A5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D45C3EC726B9782B007630A5 /* en */,
+				D45C3EC926B9782D007630A5 /* hi */,
+				D45C3ECA26B9782E007630A5 /* ja */,
+				D45C3ECB26B9782F007630A5 /* mr-IN */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -169,6 +196,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -230,6 +258,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
